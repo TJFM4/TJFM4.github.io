@@ -17,6 +17,7 @@ You can also edit `content.js` straight on github.com (pencil icon) and commit t
 - **New repo:** add a `{ repo: "...", name: "...", desc: "...", show: true },` line to a group.
 - **New category:** copy a whole `{ title: ..., repos: [ ... ] },` block.
 - **Private repo or non-code work:** add it to `additionalProjects`.
+- **Longer write-up:** fill in a project's `details` list (one string per paragraph); it appears under a "More" toggle.
 - **Hide something:** set `show: false`.
 
 To preview locally before pushing, run `python3 -m http.server` in this folder

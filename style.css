@@ -77,3 +77,13 @@ h3 { font-size: 1.35rem; margin: 0; }
   font-size: 0.875rem;
   color: var(--muted);
 }
+
+.details { margin-top: 0.4rem; }
+.details summary {
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: var(--accent);
+  width: fit-content;
+}
+.details[open] summary { margin-bottom: 0.25rem; }
+.details p { color: var(--text); margin: 0.5rem 0 0; }

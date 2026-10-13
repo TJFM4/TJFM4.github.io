@@ -32,6 +32,8 @@ window.SITE = {
   //   repo:  the repository name on github.com/TJFM4 (builds the link)
   //   url:   optional — overrides the link entirely (e.g. a live demo)
   //   show:  false hides it
+  //   details: optional longer write-up, one string per paragraph.
+  //            Shown under a "More" toggle; leave as "" to hide it.
   //
   //   Only list public repos here — private repos give visitors a 404.
   //   Describe private work under additionalProjects instead.
@@ -40,9 +42,33 @@ window.SITE = {
       title: "Cambridge Engineering",
       blurb: "Projects from the Engineering Tripos.",
       repos: [
-        { repo: "IDP2025", name: "Integrated Design Project 2025", desc: "Team codebase for the Part IB Integrated Design Project.", show: true },
-        { repo: "IB-Data-Science-Coursework", name: "IB data science coursework", desc: "Part IB engineering coursework in data science.", show: true },
-        { repo: "FLOOD-WARNING-SYSTEM---TRISTAN-AND-BARTOSZ", name: "Flood warning system", desc: "Part IA computing: monitoring river levels and flagging flood risk (with Bartosz).", show: true },
+        {
+          repo: "IDP2025",
+          name: "Integrated Design Project 2025",
+          desc: "Team codebase for the Part IB Integrated Design Project.",
+          show: true,
+          details: [
+            "",
+          ],
+        },
+        {
+          repo: "IB-Data-Science-Coursework",
+          name: "IB data science coursework",
+          desc: "Part IB engineering coursework in data science.",
+          show: true,
+          details: [
+            "",
+          ],
+        },
+        {
+          repo: "FLOOD-WARNING-SYSTEM---TRISTAN-AND-BARTOSZ",
+          name: "Flood warning system",
+          desc: "Part IA computing: monitoring river levels and flagging flood risk (with Bartosz).",
+          show: true,
+          details: [
+            "",
+          ],
+        },
       ],
     },
     {
@@ -74,12 +100,64 @@ window.SITE = {
   // Private repos and work that isn't code: societies, events, writing,
   // research, jobs… Any field can be left as "" and it won't appear.
   //   url:  optional link (leave "" for private work)
+  //   details: optional longer write-up, one string per paragraph.
+  //            Shown under a "More" toggle; leave as "" to hide it.
   additionalProjects: [
-    { title: "Tastee", role: "", date: "", desc: "Turning taste-based discovery into shoppable recommendations across retailers.", url: "", show: true },
-    { title: "Grain", role: "", date: "", desc: "Real-time, container-level carbon attribution for cloud workloads, built for Pitch in Parliament's GreenOps & Carbon Attribution pillar.", url: "", show: true },
-    { title: "Multilingual financial data extractor", role: "", date: "", desc: "Multilingual financial data extraction with click-to-source provenance, for football-club M&A due diligence.", url: "", show: true },
-    { title: "Part IIB project", role: "", date: "", desc: "Fourth-year engineering research project.", url: "", show: true },
-    { title: "Field app", role: "", date: "", desc: "", url: "", show: true },
+    {
+      title: "Tastee",
+      role: "",
+      date: "",
+      desc: "Turning taste-based discovery into shoppable recommendations across retailers.",
+      url: "",
+      show: true,
+      details: [
+        "",
+      ],
+    },
+    {
+      title: "Grain",
+      role: "",
+      date: "",
+      desc: "Real-time, container-level carbon attribution for cloud workloads, built for Pitch in Parliament's GreenOps & Carbon Attribution pillar.",
+      url: "",
+      show: true,
+      details: [
+        "",
+      ],
+    },
+    {
+      title: "Multilingual financial data extractor",
+      role: "",
+      date: "",
+      desc: "Multilingual financial data extraction with click-to-source provenance, for football-club M&A due diligence.",
+      url: "",
+      show: true,
+      details: [
+        "",
+      ],
+    },
+    {
+      title: "Part IIB project",
+      role: "",
+      date: "",
+      desc: "Fourth-year engineering research project.",
+      url: "",
+      show: true,
+      details: [
+        "",
+      ],
+    },
+    {
+      title: "Field app",
+      role: "",
+      date: "",
+      desc: "",
+      url: "",
+      show: true,
+      details: [
+        "",
+      ],
+    },
   ],
 
   footer: "© Tristan Martin",

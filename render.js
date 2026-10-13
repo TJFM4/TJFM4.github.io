@@ -24,6 +24,16 @@
     return el("a", { href: url, target: external ? "_blank" : "", rel: external ? "noopener" : "" }, text);
   }
 
+  // Optional longer write-up behind a "More" toggle; null when empty.
+  function details(paragraphs) {
+    const text = (paragraphs || []).filter((p) => p && p.trim());
+    if (!text.length) return null;
+    return el("details", { class: "details" },
+      el("summary", {}, "More"),
+      ...text.map((p) => el("p", {}, p)),
+    );
+  }
+
   // Header
   document.title = site.name;
   $("name").textContent = site.name;
@@ -51,6 +61,7 @@
       list.append(el("li", { class: "item" },
         el("h4", {}, link(r.name || r.repo, url)),
         r.desc ? el("p", {}, r.desc) : null,
+        details(r.details),
       ));
     }
 
@@ -70,6 +81,7 @@
         el("h4", {}, p.url ? link(p.title, p.url) : p.title),
         meta ? el("p", { class: "meta" }, meta) : null,
         p.desc ? el("p", {}, p.desc) : null,
+        details(p.details),
       ));
     }
   } else {
