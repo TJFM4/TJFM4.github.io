@@ -45,7 +45,7 @@ window.SITE = {
         {
           repo: "IDP2025",
           name: "Integrated Design Project 2025",
-          desc: "Team codebase for the Part IB Integrated Design Project.",
+          desc: "During this project, I led a team of six students in the design, prototyping, and construction of a delivery robot. Our software contained the logic for the robot's navigation, movement, pick-up/drop-off procedures, and troubleshooting. ",
           show: true,
           details: [
             "",
@@ -53,7 +53,7 @@ window.SITE = {
         },
         {
           repo: "IB-Data-Science-Coursework",
-          name: "IB data science coursework",
+          name: "IB Data Science coursework",
           desc: "Part IB engineering coursework in data science.",
           show: true,
           details: [
@@ -62,8 +62,8 @@ window.SITE = {
         },
         {
           repo: "FLOOD-WARNING-SYSTEM---TRISTAN-AND-BARTOSZ",
-          name: "Flood warning system",
-          desc: "Part IA computing: monitoring river levels and flagging flood risk (with Bartosz).",
+          name: "Flood Warning System",
+          desc: "Part IA computing project: monitoring live river level data and flagging flood risk across the UK (with a classmate).",
           show: true,
           details: [
             "",
