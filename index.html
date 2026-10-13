@@ -1,1 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tristan Martin</title>
+  <meta name="description" content="Personal homepage of Tristan Martin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <h1 id="name"></h1>
+      <p id="tagline" class="tagline"></p>
+      <nav id="links" class="links" aria-label="Contact links"></nav>
+    </header>
 
+    <section id="about-section" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <div id="about" class="prose"></div>
+    </section>
+
+    <section aria-labelledby="code-h">
+      <h2 id="code-h">Code</h2>
+      <div id="repo-groups"></div>
+    </section>
+
+    <section id="other-section" aria-labelledby="additional-h">
+      <h2 id="additional-h">Additional projects</h2>
+      <ul id="other" class="items"></ul>
+    </section>
+
+    <footer id="footer" class="footer"></footer>
+  </main>
+
+  <!-- Content lives in content.js; render.js turns it into the page. -->
+  <script src="content.js"></script>
+  <script src="render.js"></script>
+</body>
+</html>
