@@ -11,17 +11,17 @@ window.SITE = {
 
   // ---------------------------------------------------------------- About you
   name: "Tristan Martin",
-  tagline: "Information and Computer Engineer at the University of Cambridge — building ML, DL, and AI models for today's challenges",
+  tagline: "Information and Computer Engineer at the University of Cambridge — building ML, DL, and AI models for global challenges.",
 
   // A short paragraph or two. Each string is its own paragraph.
   about: [
-    "Now in my fourth year of engineering at the University of Cambridge, I am specializing in machine learning, deep learning, control, and signal processing. My passion for these subjects goes beyond theory. I am really interested in how these technologies can help us address challenges in biology, climate change, and water scarcity.",
+    "Now in my fourth year of engineering at the University of Cambridge, I am specializing in machine learning, deep learning, control, and signal processing. Beyond the theory, I am really interested in applying these technologies to address challenges in biology, climate change, and water scarcity.",
   ],
 
   // Links shown under your name. Delete any you don't want; add more the same way.
   links: [
     { label: "GitHub", url: "https://github.com/TJFM4" },
-    // { label: "LinkedIn", url: "https://www.linkedin.com/in/your-handle" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/tristan-martin-8b5aaa295/"},
     // { label: "CV", url: "cv.pdf" },   // drop a cv.pdf next to this file
   ],
 
