@@ -11,11 +11,11 @@ window.SITE = {
 
   // ---------------------------------------------------------------- About you
   name: "Tristan Martin",
-  tagline: "Engineer at the University of Cambridge — building with data, ML and software.",
+  tagline: "Information and Computer Engineer at the University of Cambridge — building ML, DL, and AI models for today's challenges",
 
   // A short paragraph or two. Each string is its own paragraph.
   about: [
-    "Write a couple of sentences about yourself here — what you study, what you're building, and what you're interested in.",
+    "Now in my fourth year of engineering at the University of Cambridge, I am specializing in machine learning, deep learning, control, and signal processing. My passion for these subjects goes beyond theory. I am really interested in how these technologies can help us address challenges in biology, climate change, and water scarcity.",
   ],
 
   // Links shown under your name. Delete any you don't want; add more the same way.
@@ -37,7 +37,7 @@ window.SITE = {
   //   Describe private work under additionalProjects instead.
   repoGroups: [
     {
-      title: "Cambridge engineering",
+      title: "Cambridge Engineering",
       blurb: "Projects from the Engineering Tripos.",
       repos: [
         { repo: "IDP2025", name: "Integrated Design Project 2025", desc: "Team codebase for the Part IB Integrated Design Project.", show: true },
@@ -47,7 +47,7 @@ window.SITE = {
     },
     {
       title: "Machine learning",
-      blurb: "Models built through freeCodeCamp's Machine Learning with Python.",
+      blurb: "Models built during freeCodeCamp's Machine Learning with Python course.",
       repos: [
         { repo: "Dogs-vs.-Cats", name: "Dogs vs. cats", desc: "Image classifier using a convolutional neural network.", show: true },
         { repo: "Text-Message-Sorter", name: "Text message sorter", desc: "SMS spam / ham classifier.", show: true },
@@ -57,8 +57,8 @@ window.SITE = {
       ],
     },
     {
-      title: "Data analysis & visualisation",
-      blurb: "Pandas, NumPy and Matplotlib projects.",
+      title: "Data analysis & Visualisation",
+      blurb: "Mini Pandas, NumPy and Matplotlib projects.",
       repos: [
         { repo: "boilerplate-sea-level-predictor", name: "Sea level predictor", desc: "Linear regression on historical sea-level data.", show: true },
         { repo: "Mini-Project-Medical-Data-Plots", name: "Medical data visualiser", desc: "Categorical plots and heatmaps from medical exam data.", show: true },
