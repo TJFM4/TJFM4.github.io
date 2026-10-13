@@ -137,7 +137,7 @@ window.SITE = {
       ],
     },
     {
-      title: "Part IIB project",
+      title: "Part IIB Research Project - Deep Learning for Screening of Atrial Fibrillation using Single-Lead ECGs",
       role: "",
       date: "",
       desc: "Fourth-year engineering research project.",
@@ -147,16 +147,6 @@ window.SITE = {
         "",
       ],
     },
-    {
-      title: "Field app",
-      role: "",
-      date: "",
-      desc: "",
-      url: "",
-      show: true,
-      details: [
-        "",
-      ],
     },
   ],
 
