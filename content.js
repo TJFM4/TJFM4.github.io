@@ -25,6 +25,22 @@ window.SITE = {
     // { label: "CV", url: "cv.pdf" },   // drop a cv.pdf next to this file
   ],
 
+  // ------------------------------------------------------------- Highlight
+  // One featured project, shown at the top of the page with its full
+  // explanation always visible. Set show: false to remove the section.
+  highlight: {
+    label: "Part IIB Research Project",
+    title: "Deep Learning for Screening of Atrial Fibrillation using Single-Lead ECGs",
+    desc: "Fourth-year engineering research project.",
+    url: "",          // optional link, e.g. a paper or poster
+    show: true,
+
+    // The explanation underneath. Each string is its own paragraph.
+    explanation: [
+      "",
+    ],
+  },
+
   // ------------------------------------------------------------------ Code
   // Repositories grouped by what they do. Move a repo between groups by
   // cutting and pasting its { ... } line. Rename or reorder groups freely.
@@ -130,17 +146,6 @@ window.SITE = {
       role: "",
       date: "",
       desc: "Multilingual financial data extraction with click-to-source provenance, for football-club M&A due diligence.",
-      url: "",
-      show: true,
-      details: [
-        "",
-      ],
-    },
-    {
-      title: "Part IIB Research Project - Deep Learning for Screening of Atrial Fibrillation using Single-Lead ECGs",
-      role: "",
-      date: "",
-      desc: "Fourth-year engineering research project.",
       url: "",
       show: true,
       details: [

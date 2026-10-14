@@ -42,6 +42,20 @@
     $("links").append(link(l.label, l.url));
   }
 
+  // Highlight: one featured project with its explanation always shown
+  const h = site.highlight;
+  if (h && visible(h) && h.title) {
+    const explanation = (h.explanation || []).filter((p) => p && p.trim());
+    $("highlight").append(
+      h.label ? el("p", { class: "label" }, h.label) : "",
+      el("h3", {}, h.url ? link(h.title, h.url) : h.title),
+      h.desc ? el("p", { class: "lede" }, h.desc) : "",
+      explanation.length ? el("div", { class: "prose" }, ...explanation.map((p) => el("p", {}, p))) : "",
+    );
+  } else {
+    $("highlight-section").hidden = true;
+  }
+
   // About
   const about = (site.about || []).filter(Boolean);
   if (about.length) {
