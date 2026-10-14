@@ -157,6 +157,17 @@ window.SITE = {
         "",
       ],
     },
+    {
+      title: "Aqua Solutions Data Processing Pipeline",
+      role: "",
+      date: "",
+      desc: "",
+      url: "",
+      show: true,
+      details: [
+        "",
+      ],
+    },
   ],
 
   footer: "© Tristan Martin",
