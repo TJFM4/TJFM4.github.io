@@ -147,7 +147,6 @@ window.SITE = {
         "",
       ],
     },
-    },
   ],
 
   footer: "© Tristan Martin",
