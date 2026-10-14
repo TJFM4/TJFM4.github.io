@@ -15,7 +15,7 @@ window.SITE = {
 
   // A short paragraph or two. Each string is its own paragraph.
   about: [
-    "Now in my fourth year of engineering at the University of Cambridge, I am specializing in machine learning, deep learning, control, and signal processing. Beyond the theory, I am really interested in applying these technologies to address challenges in biology, climate change, and water scarcity.",
+    "Now in my fourth year of engineering at the University of Cambridge, I am specializing in machine learning, deep learning, control, and signal processing. Beyond theory, I am passionate about applying these technologies to address challenges in biology, climate change, and water scarcity.",
   ],
 
   // Links shown under your name. Delete any you don't want; add more the same way.
