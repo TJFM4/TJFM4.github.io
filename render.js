@@ -24,13 +24,26 @@
     return el("a", { href: url, target: external ? "_blank" : "", rel: external ? "noopener" : "" }, text);
   }
 
+  // A paragraph whose text may contain [words](https://url) links.
+  function para(text, attrs) {
+    const node = el("p", attrs);
+    const pattern = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+    let last = 0;
+    for (const m of text.matchAll(pattern)) {
+      node.append(text.slice(last, m.index), link(m[1], m[2]));
+      last = m.index + m[0].length;
+    }
+    node.append(text.slice(last));
+    return node;
+  }
+
   // Optional longer write-up behind a "More" toggle; null when empty.
   function details(paragraphs) {
     const text = (paragraphs || []).filter((p) => p && p.trim());
     if (!text.length) return null;
     return el("details", { class: "details" },
       el("summary", {}, "More"),
-      ...text.map((p) => el("p", {}, p)),
+      ...text.map((p) => para(p)),
     );
   }
 
@@ -50,7 +63,7 @@
       h.label ? el("p", { class: "label" }, h.label) : "",
       el("h3", {}, h.url ? link(h.title, h.url) : h.title),
       h.desc ? el("p", { class: "lede" }, h.desc) : "",
-      explanation.length ? el("div", { class: "prose" }, ...explanation.map((p) => el("p", {}, p))) : "",
+      explanation.length ? el("div", { class: "prose" }, ...explanation.map((p) => para(p))) : "",
     );
   } else {
     $("highlight-section").hidden = true;
@@ -59,7 +72,7 @@
   // About
   const about = (site.about || []).filter(Boolean);
   if (about.length) {
-    for (const p of about) $("about").append(el("p", {}, p));
+    for (const p of about) $("about").append(para(p));
   } else {
     $("about-section").hidden = true;
   }
@@ -74,7 +87,7 @@
       const url = r.url || `https://github.com/${GITHUB_USER}/${r.repo}`;
       list.append(el("li", { class: "item" },
         el("h4", {}, link(r.name || r.repo, url)),
-        r.desc ? el("p", {}, r.desc) : null,
+        r.desc ? para(r.desc) : null,
         details(r.details),
       ));
     }
@@ -94,7 +107,7 @@
       $("other").append(el("li", { class: "item" },
         el("h4", {}, p.url ? link(p.title, p.url) : p.title),
         meta ? el("p", { class: "meta" }, meta) : null,
-        p.desc ? el("p", {}, p.desc) : null,
+        p.desc ? para(p.desc) : null,
         details(p.details),
       ));
     }

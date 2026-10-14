@@ -35,18 +35,14 @@ window.SITE = {
     url: "",          // optional link, e.g. a paper or poster
     show: true,
 
-    // The explanation underneath. Each string is its own paragraph.
+    // The explanation underneath. Each string is its own paragraph, and
+    // they all sit inside the one [ ... ], separated by commas.
+    // Links: write [the words](https://the-url) inside the text.
     explanation: [
-      "During this year-long research project, I will investigate today's state-of-the-art deep learning techniques used to automatically evaluate ECG data. The two primary models in my investigation are ECG-Mamba-V2 and MGCNet. In particular, I am looking to apply these techniques for screening of large at-risk populations using cheap, single-lead ECG devices like AliveCor's KardiaMobile.",
-    ],
-    [
-      "The use case shapes many model decisions. While ECG-Mamba-V2 and MGCNet have both proven effective at classification using 12-lead data, their performance has not been robustly tested on single-lead data which provides much less information. Additionally, both models are noise-sensitive, posing potential problems when inference must be performed on cheaply collected, single-lead data. Despite these challenges, it is my belief that the most important application of DL to ECG classification lies not in diagnostics but in screening. Diagnostics continue to require a doctor's review of 12-lead data. However, we might be able to alleviate healthcare loads and costs related to stroke if we are able to effectively screen patients for AFib and catch the condition at an early stage." 
-    ],
-    [
-      "Screening also demands different model performance than diagnosis. While a false negative (FN) in diagnosis can be deadly, the objective of screening is to maximize true positives (TPs) without generating many false positives (FPs) which crowd the healthcare system. As such, the model's performance matrix differs between screening and diagnostic settings."
-    ],
-    [
-      "In addition to the changes required by the single-lead, screening use case, my research will also investigate improvements to the performance of each model by considering factors such as the frequency range used in the MGCNet's bandpass filter pre-processing step or the augmentation of data using artificial noise. I am grateful to Dr.Punskaya for her supervision during my research and to the SAFER study for providing unprocessed data for raw experimentation."
+      "During this year-long research project, I will investigate today's state-of-the-art deep learning techniques used to automatically evaluate ECG data. The two primary models in my investigation are [ECG-Mamba-V2](https://arxiv.org/abs/2510.13046) and [MGCNet](https://arxiv.org/abs/2601.10202). In particular, I am looking to apply these techniques for screening of large at-risk populations using cheap, single-lead ECG devices like [AliveCor's KardiaMobile](https://kardia.com/kardiamobile).",
+      "The use case shapes many model decisions. While ECG-Mamba-V2 and MGCNet have both proven effective at classification using 12-lead data, their performance has not been robustly tested on single-lead data which provides much less information. Additionally, both models are noise-sensitive, posing potential problems when inference must be performed on cheaply collected, single-lead data. Despite these challenges, it is my belief that the most important application of DL to ECG classification lies not in diagnostics but in screening. Diagnostics continue to require a doctor's review of 12-lead data. However, we might be able to alleviate healthcare loads and costs related to stroke if we are able to effectively screen patients for AFib and catch the condition at an early stage.",
+      "Screening also demands different model performance than diagnosis. While a false negative (FN) in diagnosis can be deadly, the objective of screening is to maximize true positives (TPs) without generating many false positives (FPs) which crowd the healthcare system. As such, the model's performance matrix differs between screening and diagnostic settings.",
+      "In addition to the changes required by the single-lead, screening use case, my research will also investigate improvements to the performance of each model by considering factors such as the frequency range used in the MGCNet's bandpass filter pre-processing step or the augmentation of data using artificial noise. I am grateful to Dr.Punskaya for her supervision during my research and to the SAFER study for providing unprocessed data for raw experimentation.",
     ],
   },
 
