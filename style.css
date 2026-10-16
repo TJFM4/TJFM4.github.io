@@ -103,3 +103,5 @@ h3 { font-size: 1.35rem; margin: 0; }
 .highlight h3 { font-size: 1.5rem; }
 .highlight .lede { color: var(--muted); margin: 0.5rem 0 0; }
 .highlight .prose { margin-top: 1rem; }
+.highlight .more-link { margin: 1rem 0 0; font-weight: 500; }
+.highlight .more-link a::after { content: " →"; }

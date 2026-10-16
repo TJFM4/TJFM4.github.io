@@ -32,7 +32,8 @@ window.SITE = {
     label: "Part IIB Research Project",
     title: "Deep Learning for the Screening of Atrial Fibrillation using Single-Lead ECGs",
     desc: "Fourth-year engineering research project.",
-    url: "",          // optional link, e.g. a paper or poster
+    url: "https://github.com/TJFM4/IIB-PROJECT",   // optional link, e.g. repo, paper or poster
+    linkText: "View the repository on GitHub",      // shown under the explanation
     show: true,
 
     // The explanation underneath. Each string is its own paragraph, and

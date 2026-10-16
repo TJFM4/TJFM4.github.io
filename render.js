@@ -64,6 +64,7 @@
       el("h3", {}, h.url ? link(h.title, h.url) : h.title),
       h.desc ? el("p", { class: "lede" }, h.desc) : "",
       explanation.length ? el("div", { class: "prose" }, ...explanation.map((p) => para(p))) : "",
+      h.url ? el("p", { class: "more-link" }, link(h.linkText || "Learn more", h.url)) : "",
     );
   } else {
     $("highlight-section").hidden = true;
