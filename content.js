@@ -9,6 +9,11 @@
 
 window.SITE = {
 
+  // ------------------------------------------------------------- Disclaimer
+  // Shown in a box at the very top of the page. Leave it as "" to hide it.
+  // [words](https://url) links work here too.
+  disclaimer: "",
+
   // ---------------------------------------------------------------- About you
   name: "Tristan Martin",
   tagline: "Information and Computer Engineer at the University of Cambridge — building ML, DL, and AI models for global challenges.",

@@ -47,6 +47,13 @@
     );
   }
 
+  // Disclaimer box, only when there is text
+  const disclaimer = (site.disclaimer || "").trim();
+  if (disclaimer) {
+    $("disclaimer").append(para(disclaimer));
+    $("disclaimer").hidden = false;
+  }
+
   // Header
   document.title = site.name;
   $("name").textContent = site.name;
