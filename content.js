@@ -167,7 +167,7 @@ window.SITE = {
       title: "Aqua Solutions Data Processing Pipeline",
       role: "",
       date: "",
-      desc: "Along with a classmate, I developed a data intake and processing pipeline for water quality monitoring in Zimbabwe. The goal was to ultimately be able to run an algorithm on this edge device in order to alert locals of water quality. However, we found that there was insufficient publicly available data to develop such a model and so we focused our efforts  data collection in order to put together a dataset similar to the PhysiioNet datasets which crowd source novel ways of addressing societal challenges.",
+      desc: "Along with a classmate, I developed a data intake and processing pipeline for water quality monitoring in Zimbabwe. Ultimately, the goal was to run an algorithm on an edge device in order to alert locals of water quality hazards. However, we found that there was insufficient publicly available data to develop such a model and so we focused our efforts on data collection. Our goal was to put together a dataset similar to the PhysioNet datasets which crowd source novel ways of addressing societal challenges. Our work is now with Allen Chafa's Aqua Solutions project.",
       url: "",
       show: true,
       details: [
