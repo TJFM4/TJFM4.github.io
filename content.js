@@ -9,11 +9,6 @@
 
 window.SITE = {
 
-  // ------------------------------------------------------------- Disclaimer
-  // Shown in a box at the very top of the page. Leave it as "" to hide it.
-  // [words](https://url) links work here too.
-  disclaimer: "",
-
   // ---------------------------------------------------------------- About you
   name: "Tristan Martin",
   tagline: "Information and Computer Engineer at the University of Cambridge — building ML, DL, and AI models for global challenges.",
@@ -29,6 +24,11 @@ window.SITE = {
     { label: "LinkedIn", url: "https://www.linkedin.com/in/tristan-martin-8b5aaa295/"},
     // { label: "CV", url: "cv.pdf" },   // drop a cv.pdf next to this file
   ],
+
+  // ------------------------------------------------------------- Disclaimer
+  // Shown in a box at the very top of the page. Leave it as "" to hide it.
+  // [words](https://url) links work here too.
+  disclaimer: "While the following represents some of my work, other contributions to Insight Eleven, Ethicronics, Okapi Sports Network, and entrepreneurial pursuits remain private in other GitHub accounts.  ",
 
   // ------------------------------------------------------------- Highlight
   // One featured project, shown at the top of the page with its full
